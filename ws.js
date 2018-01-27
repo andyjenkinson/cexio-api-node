@@ -256,6 +256,7 @@ CexioWS.prototype.placeOrder = function (action, pair = 'BTC-USD', amount, price
     }
   }
   this.send(order)
+  return order
 }
 
 /**
@@ -301,6 +302,7 @@ CexioWS.prototype.replaceOrder = function (orderId, action, pair = 'BTC-USD', am
     }
   }
   this.send(order)
+  return order;
 }
 
 /**
